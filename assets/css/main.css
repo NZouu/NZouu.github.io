@@ -208,6 +208,7 @@ input, select, textarea {
 		line-height: 2.375;
 	}
 
+
 	a {
 		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -2654,7 +2655,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 50%;
 		}
 
 			.image.left img, .image.right img {
@@ -2663,8 +2664,8 @@ input, select, textarea {
 
 		.image.left {
 			float: left;
-			margin: 0 2rem 2rem 0;
-			top: 0.75rem;
+			margin: 0 1.5rem 1.5rem 0;
+			top: 0.5rem;
 		}
 
 		.image.right {
@@ -2956,6 +2957,10 @@ input, select, textarea {
 		box-shadow: inset 0 0 0 2px #18bfef;
 	}
 
+/* Post */
+
+
+
 /* Section/Article */
 
 	section.special, article.special {
@@ -3011,7 +3016,7 @@ input, select, textarea {
 			header.major > p {
 				margin-top: 0;
 				text-align: center;
-				line-height: 30px;
+				line-height: 35px;
 			}
 
 			header.major > .date {
@@ -3822,6 +3827,16 @@ input, select, textarea {
 		}
 
 /* Main */
+	.bodytext p {
+		line-height: 35px;
+	}
+
+	@media screen and (max-width: 980px) {
+		.bodytext p {
+			line-height: 25px;
+			text-align: left;
+		}
+	}
 
 	#main {
 		background-color: #ffffff;

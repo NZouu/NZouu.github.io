@@ -40,7 +40,7 @@ scrollInterval = setInterval(scroll, 75);
 // Small Carousel
 let smallScrollPos = 0;
 let smallScrollDirection = 'right'; // Initial scroll direction for smallCarousel
-const smallSpeed = 2; // Adjust speed as needed for smallCarousel
+const smallSpeed = 3; // Adjust speed as needed for smallCarousel
 let smallScrollInterval;
 
 function smallScroll() {
@@ -62,7 +62,7 @@ function smallScroll() {
   });
 }
 
-smallScrollInterval = setInterval(smallScroll, 50);
+smallScrollInterval = setInterval(smallScroll, 75);
 
 // // Stop scrolling on mouse hover
 // smallContainer.addEventListener('mouseenter', () => {
