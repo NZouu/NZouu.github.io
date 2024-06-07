@@ -57,7 +57,7 @@
   /*lightbox gallery*/
 
   .gallery {
-    display: flex;
+    display:inline-block;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
@@ -70,10 +70,12 @@
 
 .gallery img {
     width: calc(33.33% - 20px);
-    height: auto;
+    height: 200px;
     object-fit: cover;
     transition: transform 0.3s;
     cursor: pointer;
+	padding: 5px;
+	padding-bottom: 0;
 }
 
 .gallery img:hover {
@@ -142,7 +144,6 @@
 }
 
 /*top of page button*/
-/* Style the button */
 #topButton {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed position */
@@ -323,8 +324,8 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		text-decoration: none;
+		/* border-bottom: dotted 1px;
+		text-decoration: none; */
 	}
 
 		a:hover {
@@ -3888,6 +3889,7 @@ input, select, textarea {
 			margin-bottom: 0;
 			padding-left: 0;
 			text-transform: uppercase;
+			text-decoration: none;
 		}
 
 			#nav ul.links li {
@@ -3904,6 +3906,7 @@ input, select, textarea {
 					font-size: 0.8rem;
 					outline: none;
 					padding: 0 2rem;
+					text-decoration: none;
 				}
 
 					#nav ul.links li a:hover {
@@ -4660,6 +4663,7 @@ input, select, textarea {
 				line-height: 1;
 				margin-left: 1rem;
 				padding-left: 1rem;
+				color: #4E6192;
 			}
 
 				#copyright ul li:first-child {
