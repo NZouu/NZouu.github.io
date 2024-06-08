@@ -143,6 +143,17 @@
     }
 }
 
+.imageset img{
+	display: inline-block;
+	transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.imageset img:hover {
+    transform: scale(0.95);
+}
+
+
 /*top of page button*/
 #topButton {
     display: none; /* Hidden by default */
